@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(255, 209, 139);
+    padding: 10px;
+}
+
+.headerarea {
+    width: 100%;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Imageban{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.tablebar { 
+    padding: 0;
+}
+
+.table {
+    font-size: 100px;
+    margin-top: 50px;
+    margin-left: 10px
+}
+
+.notification {
+    margin-top: -8px;
+    margin-left: 10px;
+}
