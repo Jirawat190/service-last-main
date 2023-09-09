@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(255, 209, 139);
+    padding: 10px;
+}
+
+header {
+    width: 100%;
+    height: 118px;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.Imageban{
+    width: 100%;
+}
+
+.tablebar { 
+    padding: 0;
+}
+
+.bg{
+    width: 50%;
+    margin-left: 91px;
+    margin-top: -120px;
+}
+
+
+.texttable{
+    margin-top: -30px;
+    font-size: 50px;
+}
+
+.table {
+    width: 10%;
+    text-align: center;
+    margin-top: -18px; 
+}
+
+.notification{
+    padding: 2px;
+    width: 14%;
+    top: 22px;
+    right: 33px;
+    position: absolute;
+}
+
+.Imagecart{
+    width: 50px;
+    
+}
+
+.Imagecheak{
+    width: 46px;
+    margin-left: 11px;
+    margin-top: 12px;
+}
+
+.group{
+    width: 100%;
+    height: 70px;
+    padding: 7px;
+    background-color: orange;
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+.groupfive{
+    margin-top: 0;
+    
+}

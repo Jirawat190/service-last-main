@@ -6,8 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './Login';
 import Admin from './Admin.js';
-import Cart from './cart.js';
-import Menu from './Menu.js';
+
 import Test from './Component/test.js';
 import Table from './Component/Table';
 import Dish from './Component/dish';
@@ -19,6 +18,12 @@ import Promo from './Promotion.js';
 import Mgmember from './managermember.js';
 import Store from './Storesales';
 
+import Cart from './cart.js';
+import Promotion from './Menu/promotion';
+import Dessert from './Menu/dessertmenu';
+import Dishmenu from './Menu/dishmenu';
+import Snacksmenu from './Menu/snacksmenu';
+import Drinkmenu from './Menu/drinkmenu';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,14 +32,22 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}></Route>
       <Route path="/login" element={<Login/>}></Route>
-      <Route path="/admin" element={<Admin/>}></Route>
-      <Route path="/menu" element={<Menu/>}></Route>
-      <Route path="/cart" element={<Cart/>}></Route>
+      
+      
       <Route path="/test" element={<Test/>}></Route>
       <Route path="/table" element={<Table/>}></Route>
       <Route path="/menu/dish" element={<Dish/>}></Route>
 
+      {/* หน้าต่างMenuต่างๆ */}
+      <Route path="/menu/promotion" element={<Promotion/>}></Route>
+      <Route path="/menu/dessert" element={<Dessert/>}></Route>
+      <Route path="/menu/dishmenu" element={<Dishmenu/>}></Route>
+      <Route path="/menu/snacksmenu" element={<Snacksmenu/>}></Route>
+      <Route path="/menu/drinkmenu" element={<Drinkmenu/>}></Route>
+      <Route path="/menu/cart" element={<Cart/>}></Route>
+
       {/* หน้าต่างadminต่างๆ */}
+      <Route path="/admin" element={<Admin/>}></Route>
       <Route path="/admin/managermenu" element={<Mgmenu/>}></Route>
       <Route path="/admin/managercategories" element={<Mgcategories/>}></Route>
       <Route path="/admin/Foodtable" element={<Foodtable/>}></Route>

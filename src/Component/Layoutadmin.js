@@ -25,12 +25,12 @@ const data2 = [{ label: "> จัดสมาชิก", path: "/admin/managerme
 const drawerWidth = 200;
 
 const mystyle = {
-  display: "flex",
-  backgroundColor: "DodgerBlue"
+
 };
 
 const header = {
-  backgroundColor: "rgb(255, 153, 0)"
+  backgroundColor: "orange",
+  borderradius: "10px",
 };
 
 const textdata = {
@@ -40,8 +40,7 @@ const textdata = {
 
 export default function Navigator({ container }) {
   return (
-    <Box sx={mystyle}>
-      <CssBaseline />
+    <Box >
       <AppBar
         position="fixed"
         sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
@@ -54,6 +53,8 @@ export default function Navigator({ container }) {
           </Toolbar>
         </Link>
       </AppBar>
+
+
       <Drawer
         variant="permanent"
         sx={{

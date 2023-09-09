@@ -10,6 +10,7 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import DoDisturbOnIcon from '@mui/icons-material/DoDisturbOn';
 import Button from '@mui/material/Button';
+import { useNavigate } from "react-router-dom";
 
 const AddToCart = () => {
   const [cart, setCart] = useState([]);
@@ -22,10 +23,12 @@ const AddToCart = () => {
     }
   };
 
+  const navigate = useNavigate();
+
   return (
     <div>
       <div class='bar'>
-        <ArrowBackIosNewIcon />
+        <ArrowBackIosNewIcon onClick={() => navigate("/menu/promotion")} />
 
         <span class='text'>
           รายการอาหารที่สั่ง
